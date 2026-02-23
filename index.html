@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PWA Single Demo</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+    .page { display: none; }
+    .active { display: block; }
+    button { margin: 20px; padding: 10px 20px; }
+  </style>
+</head>
+<body>
+
+  <div id="page1" class="page active">
+    <h1>页面一</h1>
+    <button onclick="showPage(2)">切换</button>
+  </div>
+
+  <div id="page2" class="page">
+    <h1>页面二</h1>
+    <button onclick="showPage(1)">返回</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
