@@ -1,32 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PWA Single Demo</title>
+  <meta charset="UTF-8">
+  <title>PWA Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#ffffff" />
+  <link rel="manifest" href="manifest.json">
 
-  <style>
-    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
-    .page { display: none; }
-    .active { display: block; }
-    button { margin: 20px; padding: 10px 20px; }
-  </style>
 </head>
 <body>
+  <h1>PWA Install Test</h1>
+  <p>If you see install option, it works.</p>
 
-  <div id="page1" class="page active">
-    <h1>页面一</h1>
-    <button onclick="showPage(2)">切换</button>
-  </div>
-
-  <div id="page2" class="page">
-    <h1>页面二</h1>
-    <button onclick="showPage(1)">返回</button>
-  </div>
-
-  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
 </body>
 </html>
