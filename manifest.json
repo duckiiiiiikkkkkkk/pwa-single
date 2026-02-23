@@ -1,7 +1,7 @@
 {
   "name": "Single File PWA",
   "short_name": "Single",
-  "start_url": "./index.html",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
