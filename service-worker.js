@@ -3,7 +3,9 @@ const CACHE_NAME = "single-pwa-v1";
 const PRECACHE = [
   "index.html",
   "manifest.json",
-  "app.js"
+  "app.js",
+  "icon-192.png",
+  "icon-512.png"
 ];
 
 self.addEventListener("install", event => {
